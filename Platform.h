@@ -12,20 +12,13 @@
 #define PLATFORM_INTRO_OPTIONS 4
 #endif
 
-#ifndef PLATFORM_DEFAULT_CONTROL
-#define PLATFORM_DEFAULT_CONTROL 0
-#endif
-
-#if __cplusplus < 201103L
 typedef char int8_t;
 typedef short int16_t;
 typedef long int32_t;
 typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
 typedef unsigned long uint32_t;
-#ifdef _AMIGA
 typedef unsigned char bool;
-#endif
 #define true 1
 #define false 0
 #define INT32_MAX 0x7fffffff
@@ -34,9 +27,6 @@ typedef unsigned char bool;
 #define INT16_MIN 0x8000
 #define INT8_MAX 0x7f
 #define INT8_MIN 0x80
-#else
-#include <cstdint>
-#endif
 
 typedef uint32_t address_t;
 

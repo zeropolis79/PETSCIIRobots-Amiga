@@ -1,9 +1,7 @@
 *.o
 *.lnk
 *.uaem
-*.pro.user
 .DS_Store
-.qmake.stash
 AmigaRobots
 PETRobots
 ArcadeRobots
@@ -12,8 +10,3 @@ DecompressData
 PETSCIIRobots.slave
 *.lha
 *.adf
-*.psp
-*.prx
-*.map
-PathDefs
-eboot.pbp

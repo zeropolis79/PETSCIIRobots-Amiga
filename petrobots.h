@@ -237,13 +237,8 @@ extern uint8_t LIVE_MAP_ROBOTS_ON;
 extern uint8_t LIVE_MAP_PLAYER_BLINK;
 #endif
 
-#ifdef PLATFORM_TILE_BASED_RENDERING
 void PLOT_TILE(uint16_t destination, uint16_t x, uint16_t y);
 void PLOT_TRANSPARENT_TILE(uint16_t destination, uint16_t x, uint16_t y);
-#else
-void PLOT_TILE(uint16_t destination);
-void PLOT_TRANSPARENT_TILE(uint16_t destination);
-#endif
 #ifndef PLATFORM_CURSOR_SUPPORT
 void REVERSE_TILE();
 #endif
