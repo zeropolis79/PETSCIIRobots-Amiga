@@ -45,8 +45,7 @@ _ungzip__FPvPv:
 	bpl	.unzip
 	rts
 
-.unzip:	bsr	inflate
-	rts
+.unzip:	bra	inflate
 
 	;  In: a0 = input buffer
 	; Out: d0 = method or error code
@@ -281,8 +280,7 @@ fixed:	tst.b	virgin
 	; decode data until end-of-block code
 	lea	lencode,a2
 	lea	distcode,a3
-	bsr	codes
-	rts
+	bra	codes
 
 	;  In: a0 = input buffer
 	;  In: a1 = output buffer
